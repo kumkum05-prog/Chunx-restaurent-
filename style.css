@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Bitcount Single", system-ui;
+    /* border: 1px solid red; */
 }
 
 /* color variable  */
@@ -32,6 +33,7 @@ a{
 .flex{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 li{
@@ -56,6 +58,21 @@ li{
     margin: auto;
     padding-inline: 1.5rem;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
 /* header style */
 
 .navbar{
@@ -91,7 +108,8 @@ li{
 
 .cart-icon .cart-value{
     position: absolute;
-    
+    top: 50%;
+    right: -10px;
     font-size: 0.85rem;
     width: 20px;
     aspect-ratio: 1;
@@ -103,10 +121,143 @@ li{
     
 }
 
+.hamburger{
+    font-size: 2rem;
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+
+
 /* section style */
+
+.hero{
+    background: gold;
+    min-height: calc(100vh-14vh);
+}
+
+.content,
+.image{
+    flex: 1;
+    flex-basis: 300px;;
+}
+
+h1{
+    font-size: 5.6 vw;
+    color: var(--lead);
+}
+h1 span{
+    color: var(--gold-finger);
+}
+
+p{
+    font-size: 1.25rem;
+    color: grey;
+    line-height: 1.8rem;
+    /* top:2 rem; */
+}
+
+.para{
+    margin-block:2rem ;
+    max-width: 600px;
+}
+
+.social-icon{
+    background: var(--hint-yelloe);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.5rem ;
+    text-align: center;
+    line-height: 3rem; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .5s ease-in-out;
+}
+
+i{
+    margin-top: 0.8rem;
+}
+
+.social-icon:hover{
+    background: var(--lead);
+    color:var(--pure-white) ;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* footer style */
 
 
 /* media query */
+
+@media screen and (max-width: 780px){
+
+    /* header */
+    .navlist,
+    .desktop-action .btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform:translateX(-50%);
+        width: 20 rem;
+        padding: 2rem;;
+        background-color: var(--pure-white);
+        border: .1rem solid var(--gold-finger);
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                    rgba(0, 0, 0, 0.5) 10px 10px 10px inset;
+        transition: all .5 ease-in-out;
+        
+    }
+    .mobile-menu-active{
+            left: 50%;
+            transform:translateX(50%);
+        
+    }
+
+
+
+    /* section */
+    h1{
+        font-size: 3.6rem ;
+    }
+    .content{
+        padding: 3rem;
+    }
+
+    .gap-2{
+        gap: 1rem;
+    }
+
+    .gap-4{
+        gap: 4rem ;
+    }
+
+    
+    
+}

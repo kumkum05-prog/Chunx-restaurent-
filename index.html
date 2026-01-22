@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chunx restaurent</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" 
-        />
-        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header -->
 
     <header>
         <nav class="navbar flex wrapper">
             <a href="#" class="logo"> Chunx restaurent</a>
-            
 
 
+            <!-- Desktop Menu -->
             <ul class="navlist flex gap-3">
                 <li>
                     <a href="#">Home</a>
@@ -39,13 +40,13 @@
 
             </ul>
 
-            <div class="desktop action flex gap-2">
+            <div class="desktop-action flex gap-2">
                 <a href="#" class="cart-icon">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span class="cart-value"> 0</span>
                 </a>
 
-                <button class="btn" >Sign in logo
+                <button class="btn">Sign in
                     &nbsp;
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </button>
@@ -54,15 +55,70 @@
                     <i class="fa-solid fa-burger"></i>
                 </a>
             </div>
+
+            <!-- Mobile Menu -->
+            <ul class="mobile-menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+
+                <li><button class="btn">Sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                </li>
+
+            </ul>
+
         </nav>
     </header>
 
     <main>
-
+        <section>
+            <div class="hero flex wrapper gap-4">
+                <div class="content">
+                    <h1>Enjoy Your Delicious <span>Food</span></h1>
+                    <p class="para">
+                        we will fill Your tummy with Delicious <br> food with fast
+                        delivery.
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn">Order Now</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="/images/pizza-delivery-man-holding-pizza-boxes-isolated-png-1971659450.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
 </body>
+
 </html>
